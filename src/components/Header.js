@@ -1,8 +1,12 @@
 import React from 'react'
+import Topheader from './leyouts/Topheader'
+
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <Topheader />
+    </div>
   )
 }
 
