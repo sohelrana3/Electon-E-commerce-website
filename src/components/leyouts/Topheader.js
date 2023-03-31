@@ -2,10 +2,12 @@ import React from 'react'
 import Flex from './Flex'
 import {GoLocation} from 'react-icons/go'
 import {MdDirectionsTransit} from 'react-icons/md'
+import Container from './Container'
 
 const Topheader = () => {
   return (
-        <Flex className='sm:flex sm:justify-between pb-1 sm:pb-3 md:pb-5 lg:pb-7'>
+    <Container>
+          <Flex className='sm:flex sm:justify-between pb-1 sm:pb-3 md:pb-5 lg:pb-7'>
             <div className='pb-2 sm:pb-0'>
                 <p className='font-popi text-textdk font-normal text-sm'>
                   Need help? Call us: (+98) 0234 456 789
@@ -22,6 +24,8 @@ const Topheader = () => {
                 </diV>
             </div>
         </Flex>
+    </Container>
+      
   )
 }
 
