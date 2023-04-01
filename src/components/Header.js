@@ -11,14 +11,12 @@ import {AiOutlineUser, AiOutlineHeart, AiOutlineShoppingCart} from 'react-icons/
 
 const Header = () => {
   return (
-    <div className='bg-primary '>
+    <div className='bg-primary w-full'>
        <Container>
         <Flex className='flex items-center justify-between py-4'>
-          <div className='w-1/5'>
+          <div className='w-1/2 flex justify-between relative'>
             <Images imgsrc='images/logo.png' />
-          </div>
-          <div className='w-[438px] relative'>
-            <Inputbox placeholder='Serach any things' className='w-[438px] py-4 rounded-[20px] px-4 border-none outline-none' />
+            <Inputbox placeholder='Serach any things' className='lg:w-[438px] py-4 rounded-[20px] px-4 border-none outline-none' />
             <Button className='absolute top-0 right-0 py-4 px-10 bg-yow text-white font-popi text-base font-semibold rounded-[20px]' title='Search' />
           </div>
           <div className='flex gap-x-7'>
