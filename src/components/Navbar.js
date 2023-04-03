@@ -4,6 +4,7 @@ import Flex from './leyouts/Flex'
 import List from './leyouts/List'
 import {FaAngleDown} from 'react-icons/fa'
 import Listitem from './leyouts/Listitem'
+import Navitem from './leyouts/Navitem'
 
 
 const Navbar = () => {
@@ -35,9 +36,11 @@ const Navbar = () => {
             </div>
         </div>
         <div>
-              
+           <Navitem />
         </div>
-        <div>3</div>
+        <div>
+          <h3 className='text-base text-primary font-bold font-popi'>30 Days Free Return</h3>
+        </div>
       </Flex>
     </Container>
   </div>
