@@ -10,6 +10,7 @@ const Navbar = () => {
   let [categories, setcatagorise] = useState(false) 
   let [home, sethome] = useState(false)
   let [Catalog, setCatalog] = useState(false)
+  let [Pages, setPages] = useState(false)
   let handleclick = ()=>{
     console.log("pppp");
     setcatagorise(!categories)
@@ -39,7 +40,7 @@ const Navbar = () => {
             </div>
         </div>
         <div>
-          <List className='flex gap-x-3'>
+          <List className='flex gap-x-7'>
               <div onClick={()=> sethome(!home)} className='flex items-center gap-x-4 relative'>
                 <Listitem className='text-[#3A3A3A] text-base font-medium font-popi' listitem='Home' />
                 <FaAngleDown />
@@ -70,7 +71,23 @@ const Navbar = () => {
                   }
                 </div>
               </div>
-              
+              <Listitem className='text-[#3A3A3A] text-base font-medium font-popi' listitem='Blog' />
+              <div onClick={()=> setPages(!Pages)} className='flex items-center gap-x-4 relative'>
+                <Listitem className='text-[#3A3A3A] text-base font-medium font-popi' listitem='Pages' />
+                <FaAngleDown />
+                <div className='absolute top-10 left-0 bg-[#F4F4F4] w-full'>
+                  {
+                    Pages &&(
+                      <List>
+                      <Listitem href='/' className='text-[#3A3A3A] text-base font-medium font-popi py-2 border-b border-yow' listitem='Pages' />
+                      <Listitem href='/' className='text-[#3A3A3A] text-base font-medium font-popi py-2 border-b border-yow' listitem='Pages 2' />
+                      <Listitem href='/' className='text-[#3A3A3A] text-base font-medium font-popi py-2 border-b border-yow' listitem='Pages 3' />
+                      </List>
+                    )
+                  }
+                </div>
+              </div>
+              <Listitem className='text-[#3A3A3A] text-base font-medium font-popi' listitem='About Us' />
           </List >
              
         </div>
