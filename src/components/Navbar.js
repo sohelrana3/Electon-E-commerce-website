@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Container from './leyouts/Container'
 import Flex from './leyouts/Flex'
 import List from './leyouts/List'
@@ -16,7 +16,17 @@ const Navbar = () => {
     console.log("pppp");
     setcatagorise(!categories)
   }
- 
+  useEffect(()=>{
+    function scrollWidth(){
+        if(window.innerWidth < 1024){
+          setnavbar(false)
+        }else{
+          setnavbar(true)
+        }
+    }
+    scrollWidth()
+    window.addEventListener("resize", scrollWidth);
+},[])
   return (
     <div className='w-full bg-[#F4f4F4]'>
      <Container>
