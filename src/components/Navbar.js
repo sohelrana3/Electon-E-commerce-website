@@ -25,7 +25,7 @@ const Navbar = () => {
             <span>Browse categories</span>
             <FaAngleDown />
             </p>
-            <div className='bg-yow absolute top-14 left-0 w-full '>
+            <div className='bg-yow absolute top-14 left-0 w-full z-50'>
               {
                 categories &&(
                   <List>
@@ -44,7 +44,7 @@ const Navbar = () => {
               <div onClick={()=> sethome(!home)} className='flex items-center gap-x-4 relative'>
                 <Listitem className='text-[#3A3A3A] text-base font-medium font-popi' listitem='Home' />
                 <FaAngleDown />
-                <div className='absolute top-10 left-0 bg-[#F4F4F4] w-full'>
+                <div className='absolute top-10 left-0 bg-[#F4F4F4] w-full z-50'>
                   {
                     home &&(
                       <List>
@@ -59,7 +59,7 @@ const Navbar = () => {
               <div onClick={()=> setCatalog(!Catalog)} className='flex items-center gap-x-4 relative'>
                 <Listitem className='text-[#3A3A3A] text-base font-medium font-popi' listitem='Catalog' />
                 <FaAngleDown />
-                <div className='absolute top-10 left-0 bg-[#F4F4F4] w-full'>
+                <div className='absolute top-10 left-0 bg-[#F4F4F4] w-full z-50'>
                   {
                     Catalog &&(
                       <List>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <div onClick={()=> setPages(!Pages)} className='flex items-center gap-x-4 relative'>
                 <Listitem className='text-[#3A3A3A] text-base font-medium font-popi' listitem='Pages' />
                 <FaAngleDown />
-                <div className='absolute top-10 left-0 bg-[#F4F4F4] w-full'>
+                <div className='absolute top-10 left-0 bg-[#F4F4F4] w-full z-50'>
                   {
                     Pages &&(
                       <List>
